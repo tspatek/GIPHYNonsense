@@ -90,9 +90,13 @@ $(document).ready(function () {
         event.preventDefault();
 
         var newBook = $("#book-input").val().trim();
-        topics.push(newBook);
 
-        createButtons();
+        if (newBook !== "") {
+            topics.push(newBook);
+            createButtons();
+            $("#book-input").val("");
+        }
+
     }
 
     createButtons();
