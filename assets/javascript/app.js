@@ -32,7 +32,7 @@ $(document).ready(function () {
         topics.forEach(function (item) {
             $("#book-buttons").append(`
             <button data-name="${item}" type="button" 
-                    class="book">
+                    class="book btn btn-secondary m-1">
                 ${item}
             </button>
         `)
@@ -60,11 +60,13 @@ $(document).ready(function () {
 
             imageData.forEach(function (item) {
                 $("#book-gifs").append(`
-                    <img src=${item.images.fixed_height_still.url}
-                         data-still=${item.images.fixed_height_still.url} 
-                         data-animate=${item.images.fixed_height.url} 
-                         data-state="still" class="gif"
-                    >
+                    <div class="text-center m-3">  
+                        <p>Rating: ${item.rating}</p>
+                        <img src=${item.images.fixed_height_still.url}
+                        data-still=${item.images.fixed_height_still.url} 
+                        data-animate=${item.images.fixed_height.url} 
+                        data-state="still" class="gif m-1">
+                    </div?
                 `)
             })
 
