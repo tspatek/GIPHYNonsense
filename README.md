@@ -1,2 +1,2 @@
-# GifTastic
-https://tspatek.github.io/GifTastic/
+# GIPHYNonsense
+https://tspatek.github.io/GIPHYNonsense/
